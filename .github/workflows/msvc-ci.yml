@@ -25,3 +25,9 @@ jobs:
           bash.exe ..\..\tests\all_tests.sh
         env:
           PYTHON_EXE: python.exe
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: pycdc
+          path: .
